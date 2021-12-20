@@ -1,0 +1,377 @@
+
+body{
+    margin:0;
+    padding: 0;
+    
+    font-family: 'Bebas Neue', cursive;
+}
+ul{
+    list-style: none;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+a:hover{
+    color:rgb(44, 44, 172);
+}
+.container{
+    width: 1170px;
+    margin:0 auto;
+    position: relative;
+}
+.cite-menu ul{
+    margin: 0;
+}
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 1170px;
+    
+}
+
+.logo-header{
+    width: 90px;
+    position: absolute;
+    right: 50%;
+    
+    
+    
+
+}
+
+.search-cart li{
+    width: 25px;
+}
+
+.cite-menu
+{
+    display: flex;
+    flex-wrap: wrap;
+    width: 450px;
+}
+
+.cite-menu li{
+    margin-left: 40px;
+    display: block;
+    padding-top: 10px;
+    
+}
+
+
+
+.search-cart{
+    display: flex;
+    width: 450px;
+    justify-content: flex-end;
+}
+.search-cart li{
+    margin-right: 40px;
+}
+
+
+
+/*BODY*/
+
+
+
+.cite-banner{
+    
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    
+}
+
+
+.col1{
+    position: relative;
+}
+
+.col1 h1{
+    text-transform: uppercase;
+    font-size: 180px;
+    padding: 0;
+    margin: 0;
+}
+.col1 .slogan{
+    margin: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color:rgb(160, 160, 160);
+    position: absolute;
+}
+
+.col2{
+    position: relative;
+    z-index: 1;
+}
+.col2::before{
+    content: "";
+    width:230px;
+    height: 180px;
+   
+    position: absolute;
+    top: -50px;
+    left: -50px;
+    z-index: -1;
+    background: repeating-linear-gradient(45deg, rgba(255,255,255,0), rgba(255,255,255,0) 12px, rgb(160, 160, 160) 12px, rgb(160, 160, 160) 15px);
+}
+
+.col2::after{
+    content: "";
+    
+    width:230px;
+    height: 180px;
+   
+    position: absolute;
+    bottom: -50px;
+    right: -50px;
+    z-index: -1;
+    background: repeating-linear-gradient(45deg, rgba(255,255,255,0), rgba(255,255,255,0) 12px, rgb(160, 160, 160) 12px, rgb(160, 160, 160) 15px);
+}
+.bg{
+    background: #f1f2f4;
+}
+.button-custom{
+    width: 220px;
+    height: 60px;
+    background: #151c22;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.button-custom a{
+    color: white;
+}
+
+.bestsellers,
+.shop-by-category{
+    margin-top: 130px;
+}
+
+.title{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.title a{
+    font-size: 18px;
+    text-decoration: underline;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.title h2{
+    font-size: 30px;
+    text-transform: lowercase;
+    margin: 0;
+}
+
+.products{
+    /*display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top:75px;
+    */
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+    
+}
+
+.item{
+    margin-top: 50px;
+}
+
+.item img{
+    width: 270px;
+    height: 340px;
+}
+
+.item p{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    margin:0;
+}
+
+.item p:first-of-type{
+    margin-top: 25px;
+    margin-bottom: 10px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: lighter;
+}
+
+.item .price::before{
+    content: "$ ";    
+}
+
+.fall{
+    margin-top: 130px;
+    display: grid;
+    grid-template-columns: 700px 470px;
+    
+}
+.image img{
+    width: 700px;
+    height: 370px;
+}
+.text{
+    background-color: #f1f2f4;
+    width: 400px;
+    height: 300px;
+    margin: auto 0;
+    
+}
+.text_cont p,
+.text_cont h2{
+    margin: 0;
+}
+
+
+.text_cont p{
+    
+    color:rgb(160, 160, 160);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.text_cont h2{
+    margin-bottom:50px;
+}
+
+.text .button-custom {
+    width: 200px;
+    margin: 0;
+}
+
+
+.text-container{
+    margin-left: 70px;
+    margin-top: 70px;
+    
+}
+.text::after{
+    content: "";
+    display: block;
+    background: repeating-linear-gradient(-45deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) 29px, rgb(0, 0, 0) 29px, rgb(0, 0, 0) 33px);
+    position: absolute;
+    top: 0;
+    width: 470px;
+    height: 370px;
+    z-index: -1;
+}
+
+/*FOOTER*/
+.logo-footer{
+    width: 90px;
+}
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top:130px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: #151c22;
+}
+
+.footer-menu,
+.footer-links{
+    display: flex;
+   margin:0;
+  
+}
+.footer-menu{
+    margin-top:40px;
+}
+
+.footer-links{
+    margin-top: 30px;
+}
+.footer-menu li:not(:last-child){
+    margin-right: 40px;
+}
+.footer-menu li a{
+    color: white;
+    font-size: 17px;
+}
+
+.footer-links img{
+    width: 20px;
+}
+
+.footer-links li:not(:last-child){
+    margin-right: 30px;
+}
+.backing{
+    background-color: #151c22;
+    width: 100%;
+}
+/*
+.fall{
+    margin-top: 130px;
+    display: flex;
+    align-items:center;
+}
+.image img{
+    width: 700px;
+}
+
+.text{
+    background-color: #f1f2f4;
+    width: 400px;
+    height: 300px;
+    
+}
+
+.text_cont p,
+.text_cont h2{
+    margin: 0;
+}
+
+.text_cont p{
+    
+    color:rgb(160, 160, 160);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.text_cont h2{
+    margin-bottom:50px;
+}
+
+
+
+.text .button-custom {
+    width: 200px;
+    margin: 0;
+}
+
+
+
+.text_cont
+{
+   
+    margin-top: 70px;
+    margin-left: 70px;
+}
+
+.text .button-custom{
+    margin-left: 70px;
+}
+
+.text::after{
+
+    background:repeating-linear-gradient(45deg, rgba(255,255,255,0), rgba(255,255,255,0) 12px, rgb(160, 160, 160) 12px, rgb(160, 160, 160) 15px);
+    
+}
+*/
